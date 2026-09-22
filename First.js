@@ -7,13 +7,13 @@ var weight = readline.question("Please enter your weight in (10~200kg): ");
 var height = readline.question("Please enter your height in (10~200cm): ");
 
 while(true){
-    weight = readline.questionfloat("Please enter your weight in (10~200kg): ");
-if(weight < 10 || weight > 200)
-    console.log("Plase 10~200!"){
+    weight = readline.questionFloat("Please enter your weight in (10~200kg): ");
+if(weight < 10 || weight > 200){
+    console.log("Plase 10~200!")
     continue;
 }else
     break;
-
+}
 
 
 var bmi = weight/((height/100)**2);
